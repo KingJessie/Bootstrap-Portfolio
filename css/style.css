@@ -60,24 +60,79 @@ html {
 }
 
 
-.jumbo-content{
+.wrapper{
+  display: flex;
+}
+.wrapper .static-txt{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 600;
+}
+.wrapper .dynamic-txts{
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #BCED09;
+  font-size: 60px;
+  font-weight: 600;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 110%;
+  width: 100%;
+  background: black;
+  border-left: 2px solid #BCED09;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+
+
+section {
+  padding-bottom: 3rem;
+}
+
+.content {
+padding-bottom: 1rem;
+font-weight: 600 !important;
+}
+
+.content-h2{
+  text-decoration: underline !important;
+  padding-bottom: 1rem;
+  font-weight: 600 !important;
   color: #FF47DA;
 }
 
-.content-1{
-  color: white;
-}
-
-.content-2 {
-  color: white;
-}
-
-section{
-  padding-bottom: 3rem;
-}
 .img-fluid{
   height: 65vh;
   border-radius: 50%;
-  object-fit: cover;
+  
 }
+
 
