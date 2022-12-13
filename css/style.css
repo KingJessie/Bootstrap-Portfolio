@@ -5,17 +5,26 @@ html {
     width: 100%;
     height: 100%;
     font-family: 'Montserrat';
-    background-color: #fabec6;
+    background-color: #EFEFEF;
     
 }
 
 .navbar-custom {
-  background-color: #fabec6;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  font-size: 0.8rem;
+  position: fixed;
+  width: 100%;
+  background: url("../images/transparency.png");
+  background-color: transparent !important;
+  background-size: cover;
+  z-index: 10;
 }
+
+.navbar-brand{
+  font-size: 0.9.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 
 .navbar-nav {
   margin-left: auto;
@@ -24,10 +33,14 @@ html {
 
 .nav-item{
   margin: 0px 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
 }
 
 .nav-link{
-  color: black !important;
+  color: #B4ADEA !important;
 }
 
 .nav-link:hover{
@@ -35,11 +48,36 @@ html {
 }
 
 .jumbotron {
-  background-image: url(../images/background.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg-jumbo.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   height: calc(100vh - 25px);
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  color: white;
 }
+
+
+.jumbo-content{
+  color: #FF47DA;
+}
+
+.content-1{
+  color: white;
+}
+
+.content-2 {
+  color: white;
+}
+
+section{
+  padding-bottom: 3rem;
+}
+.img-fluid{
+  height: 65vh;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
