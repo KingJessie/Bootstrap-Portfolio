@@ -131,8 +131,17 @@ html {
   border-radius: 50%;
 }
 
+.brand-icons{
+  margin-right: 0.5rem;
+  color: white;
+  font-size: 40px;
+  position: relative;
+  bottom: 5px;
+}
+
 .skill{
-  text-decoration: underline !important;
+  position: absolute;
+  bottom: 52%;
   padding-bottom: 1rem;
   font-weight: 560 !important;
   color: #bced09;
@@ -364,12 +373,12 @@ h5.card-title{
   font-size: 20px !important;
 }
 
-.contact-links a:hover{
+/* .contact-links a:hover{
   display: inline;
   width: 100px;
   height: 25px;
   padding: 5px;
-}
+} */
 
 footer {
   font-weight: 500;
