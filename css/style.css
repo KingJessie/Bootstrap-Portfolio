@@ -114,15 +114,14 @@ section {
 }
 
 .content {
-  padding-bottom: 1rem;
   font-weight: 600 !important;
 }
 
 .content-h2 {
   text-decoration: underline !important;
   padding-bottom: 1rem;
-  font-weight: 600 !important;
-  color: #ff47da;
+  font-weight: 560 !important;
+  color: #F6511D;
 }
 
 .img-fluid {
@@ -130,8 +129,14 @@ section {
   border-radius: 50%;
 }
 
+.skill{
+  text-decoration: underline !important;
+  padding-bottom: 1rem;
+  font-weight: 560 !important;
+  color: #bced09;
+}
 .skills {
-  background-color: rgb(227, 221, 221);
+  background-color: #46494c;
   padding-top: 3rem !important;
   width: 100%;
   margin: 60px auto;
@@ -162,6 +167,7 @@ section {
   top: -20px;
   font-size: 16.5px;
   font-weight: 600;
+  color: white;
   font-family: Montserrat;
 }
 
@@ -183,11 +189,9 @@ section {
     linear,
     left top,
     left bottom,
-    from(#B388EB),
-    to(#B388EB)
+    from(#fb4a21),
+    to(#fb4a21)
   );
-  background-image: -moz-linear-gradient(top, #14ffbd, #e06995);
-  background-image: linear-gradient(top, #14ffbd, #e06995);
 }
 
 .css {
@@ -198,11 +202,9 @@ section {
     linear,
     left top,
     left bottom,
-    from(#E7E247),
-    to(#E7E247)
+    from(#fbff12),
+    to(#fbff12)
   );
-  background-image: -moz-linear-gradient(top, #14ffbd, #e06995);
-  background-image: linear-gradient(top, #14ffbd, #e06995);
 }
 
 .js {
@@ -213,11 +215,9 @@ section {
     linear,
     left top,
     left bottom,
-    from(#8ae1fc),
-    to(#8ae1fc)
+    from(#00bbf9),
+    to(#00bbf9)
   );
-  background-image: -moz-linear-gradient(top, #14ffbd, #e06995);
-  background-image: linear-gradient(top, #14ffbd, #e06995);
 }
 
 .py {
@@ -228,11 +228,9 @@ section {
     linear,
     left top,
     left bottom,
-    from(#61FF7E),
-    to(#61FF7E)
+    from(#89fc00),
+    to(#89fc00)
   );
-  background-image: -moz-linear-gradient(top, #14ffbd, #e06995);
-  background-image: linear-gradient(top, #14ffbd, #e06995);
 }
 
 .sql {
@@ -244,12 +242,11 @@ section {
     linear,
     left top,
     left bottom,
-    from(#FC60A8),
-    to(#FC60A8)
+    from(#ff01fb),
+    to(#ff01fb)
   );
-  background-image: -moz-linear-gradient(top, #14ffbd, #e06995);
-  background-image: linear-gradient(top, #14ffbd, #e06995);
 }
+
 @-moz-keyframes html {
   0% {
     width: 0px;
@@ -291,14 +288,76 @@ section {
   }
 }
 
+
+
+.cardContainer {
+  margin-bottom: 15px;
+}
+.card {
+  margin: 0 auto;
+}
+
+img.card-img-top{
+height: 65vh;
+}
+
+h2.sectionHeading{
+  text-decoration: underline !important;
+  padding-bottom: 0.5rem;
+  font-weight: 550 !important;
+  color: #ff01fb;
+  margin-left: 10px;
+}
+
+.contact-heading{
+  text-decoration: underline !important;
+  padding-bottom: 0.5rem;
+  font-weight: 550 !important;
+  color: black;
+  margin-left: 10px;
+}
+
+#contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg-skill.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80%;
+  
+ }
+
+.contact-links{
+  color: #000608;
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 30px;
+  
+}
+
+.contact-links a{
+  color: #000608;
+  font-size: 20px !important;
+  text-decoration: underline;
+}
+
+.contact-links a:hover{
+  display: inline;
+  width: 100px;
+  height: 25px;
+  padding: 5px;
+  background-color: #a2aade
+}
+
 footer {
   font-weight: 500;
   letter-spacing: 0.1rem;
   bottom: 0;
   width: 100%;
   height: 6vh;
-  background: #d5b9b2;
-  color: white;
+  background: white;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
