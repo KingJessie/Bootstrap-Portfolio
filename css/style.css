@@ -4,7 +4,7 @@ body,
 html {
   width: 100%;
   height: 100%;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   background-color: #efefef;
 }
 
@@ -109,7 +109,7 @@ html {
   }
 }
 
-section {
+.page-section-contact {
   padding-bottom: 3rem;
 }
 
@@ -118,8 +118,10 @@ section {
 }
 
 .content-h2 {
+  text-transform: uppercase;
   text-decoration: underline !important;
   padding-bottom: 1rem;
+  font-size: 30px;
   font-weight: 560 !important;
   color: #F6511D;
 }
@@ -168,7 +170,7 @@ section {
   font-size: 16.5px;
   font-weight: 600;
   color: white;
-  font-family: Montserrat;
+ 
 }
 
 .bar {
@@ -288,8 +290,6 @@ section {
   }
 }
 
-
-
 .cardContainer {
   margin-bottom: 15px;
 }
@@ -302,23 +302,46 @@ height: 65vh;
 }
 
 h2.sectionHeading{
-  text-decoration: underline !important;
+  text-transform: uppercase;
   padding-bottom: 0.5rem;
+  font-size: 30px;
   font-weight: 550 !important;
   color: #ff01fb;
   margin-left: 10px;
 }
 
+p.card-text{
+  font-size: 14px;
+  font-weight: normal;
+}
+
+h5.card-title{
+  font-weight: bold;
+}
+
+.bnt-1{
+  background-color: #c000ff;
+}
+
+.bnt-2{
+  background-color: #faff00;
+}
+
+.bnt-3{
+  background-color: #89fc00;
+}
+
 .contact-heading{
-  text-decoration: underline !important;
+  text-transform: uppercase;
   padding-bottom: 0.5rem;
+  font-size: 30px;
   font-weight: 550 !important;
-  color: black;
+  color: white;
   margin-left: 10px;
 }
 
 #contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg-skill.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../images/bg-skill.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -337,9 +360,8 @@ h2.sectionHeading{
 }
 
 .contact-links a{
-  color: #000608;
+  color: #f5b700;
   font-size: 20px !important;
-  text-decoration: underline;
 }
 
 .contact-links a:hover{
@@ -347,7 +369,6 @@ h2.sectionHeading{
   width: 100px;
   height: 25px;
   padding: 5px;
-  background-color: #a2aade
 }
 
 footer {
@@ -356,8 +377,8 @@ footer {
   bottom: 0;
   width: 100%;
   height: 6vh;
-  background: white;
-  color: black;
+  background: black;
+  color: #bebbb9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -365,7 +386,7 @@ footer {
 }
 
 footer span {
-  color: black;
+  color: #bced09;
 }
 
 /* Media queries to apply different styles for different media screens e.g. Mobile or Tablet*/
