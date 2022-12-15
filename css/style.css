@@ -315,7 +315,7 @@ h2.sectionHeading{
   padding-bottom: 0.5rem;
   font-size: 30px;
   font-weight: 550 !important;
-  color: #ff01fb;
+  color: #ff0f80;
   margin-left: 10px;
 }
 
@@ -328,17 +328,43 @@ h5.card-title{
   font-weight: bold;
 }
 
+.custom-bnt{
+  width: 100px;
+  color: #fff;
+  cursor: pointer;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+}
+
+
 .bnt-1{
-  background-color: #c000ff;
+  background-color: black;
+}
+
+.bnt-1:hover {
+  background-image: linear-gradient(to right, #fe2483, #ec8c69, #f7186a , #FBB03B);
+box-shadow: 0 4px 15px 0 rgba(201, 2, 55, 0.75);
 }
 
 .bnt-2{
-  background-color: #faff00;
+  background-color: black;
+}
+
+.bnt-2:hover{
+  background-image: linear-gradient(to right, #e6ff00, #ff9a44, #ef9d43, #e6ff00);
+    box-shadow: 0 4px 15px 0 rgb(242, 255, 0);
 }
 
 .bnt-3{
-  background-color: #89fc00;
+  background-color: black;
 }
+
+.bnt-3:hover{
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
 
 .contact-heading{
   text-transform: uppercase;
@@ -359,26 +385,23 @@ h5.card-title{
  }
 
 .contact-links{
-  color: #000608;
   display: flex;
   width: 90%;
   justify-content: space-around;
   text-align: center;
   padding-top: 30px;
+  font-size: 48px;
+  list-style: none;
   
 }
 
 .contact-links a{
-  color: #f5b700;
-  font-size: 20px !important;
+  color: white;
 }
 
-/* .contact-links a:hover{
-  display: inline;
-  width: 100px;
-  height: 25px;
-  padding: 5px;
-} */
+.contact-links a:hover{
+  color: #bced09;
+}
 
 footer {
   font-weight: 500;
@@ -395,12 +418,15 @@ footer {
 }
 
 footer span {
-  color: #bced09;
+  color: #e6ff00;
 }
 
 /* Media queries to apply different styles for different media screens e.g. Mobile or Tablet*/
 @media screen and (max-width: 768px) {
   header .wrapper {
+    display: none;
+  }
+  footer span{
     display: none;
   }
 }
