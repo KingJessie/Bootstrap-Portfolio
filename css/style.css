@@ -1,4 +1,7 @@
+/* Google Fonts Import - Font Family: Montserrat */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;800&display=swap");
+
+/* Body Element Styling  */
 
 body,
 html {
@@ -8,6 +11,7 @@ html {
   background-color: #efefef;
 }
 
+/* Navbar Styling */
 .navbar-custom {
   position: fixed;
   width: 100%;
@@ -45,6 +49,7 @@ html {
   text-decoration: underline;
 }
 
+/* Jumbotron Styling */
 .jumbotron {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/bg-jumbo.jpeg");
@@ -56,6 +61,8 @@ html {
   justify-content: center;
   flex-direction: column;
 }
+
+/* Typing Text Effect */
 
 .wrapper {
   display: flex;
@@ -109,9 +116,7 @@ html {
   }
 }
 
-.page-section-contact {
-  padding-bottom: 3rem;
-}
+/* About Me Content Styling */
 
 .content {
   font-weight: 600 !important;
@@ -124,11 +129,19 @@ html {
   font-size: 30px;
   font-weight: 560 !important;
   color: #F6511D;
+  margin-top: 15px;
 }
 
+/* Profile Pic Styling */
 .img-fluid {
   height: 65vh;
   border-radius: 50%;
+}
+
+/* My Skills and Icons Styling  */
+
+.row{
+  margin-top: 30px;
 }
 
 .brand-icons{
@@ -136,7 +149,7 @@ html {
   color: white;
   font-size: 40px;
   position: relative;
-  bottom: 5px;
+  bottom: 10px;
 }
 
 .skill{
@@ -153,6 +166,8 @@ html {
   margin: 60px auto;
   padding: 20px;
 }
+
+/* Skills Styling For Bar */
 
 .skills li {
   list-style: none !important;
@@ -258,7 +273,7 @@ html {
   );
 }
 
-@-moz-keyframes html {
+@keyframes html {
   0% {
     width: 0px;
   }
@@ -266,7 +281,7 @@ html {
     width: 90%;
   }
 }
-@-moz-keyframes css {
+@keyframes css {
   0% {
     width: 0px;
   }
@@ -274,7 +289,7 @@ html {
     width: 80%;
   }
 }
-@-webkit-keyframes js {
+@keyframes js {
   0% {
     width: 0px;
   }
@@ -282,7 +297,7 @@ html {
     width: 75%;
   }
 }
-@-webkit-keyframes py {
+@keyframes py {
   0% {
     width: 0px;
   }
@@ -290,13 +305,24 @@ html {
     width: 90%;
   }
 }
-@-webkit-keyframes sql {
+@keyframes sql {
   0% {
     width: 0px;
   }
   100% {
     width: 65%;
   }
+}
+
+/* Cards: Project Styling */
+
+h2.sectionHeading{
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+  font-size: 30px;
+  font-weight: 550 !important;
+  color: #ff0f80;
+  margin-left: 10px;
 }
 
 .cardContainer {
@@ -310,13 +336,8 @@ img.card-img-top{
 height: 65vh;
 }
 
-h2.sectionHeading{
-  text-transform: uppercase;
-  padding-bottom: 0.5rem;
-  font-size: 30px;
-  font-weight: 550 !important;
-  color: #ff0f80;
-  margin-left: 10px;
+h5.card-title{
+  font-weight: bold;
 }
 
 p.card-text{
@@ -324,9 +345,8 @@ p.card-text{
   font-weight: normal;
 }
 
-h5.card-title{
-  font-weight: bold;
-}
+
+/* Button Styling for Cards (Projects) */
 
 .custom-bnt{
   width: 100px;
@@ -336,7 +356,6 @@ h5.card-title{
   border: none;
   background-size: 300% 100%;
 }
-
 
 .bnt-1{
   background-color: black;
@@ -365,6 +384,7 @@ box-shadow: 0 4px 15px 0 rgba(201, 2, 55, 0.75);
     box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
 }
 
+/* Contact Section Styling */
 
 .contact-heading{
   text-transform: uppercase;
@@ -373,6 +393,11 @@ box-shadow: 0 4px 15px 0 rgba(201, 2, 55, 0.75);
   font-weight: 550 !important;
   color: white;
   margin-left: 10px;
+  margin-top: 5px;
+}
+
+.page-section-contact {
+  padding-bottom: 3rem;
 }
 
 #contact {
@@ -403,6 +428,7 @@ box-shadow: 0 4px 15px 0 rgba(201, 2, 55, 0.75);
   color: #bced09;
 }
 
+/* Footer Styling */
 footer {
   font-weight: 500;
   letter-spacing: 0.1rem;
@@ -421,12 +447,16 @@ footer span {
   color: #e6ff00;
 }
 
-/* Media queries to apply different styles for different media screens e.g. Mobile or Tablet*/
+/* Media queries to apply different styles for different media screens e.g. Mobile or Tablet */
 @media screen and (max-width: 768px) {
   header .wrapper {
     display: none;
   }
   footer span{
     display: none;
+  }
+
+  .brand-icons{
+    font-size: 16px;
   }
 }
